@@ -1,5 +1,5 @@
 //Single level Inheritance using example of Software Engineer and developer.
--------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 package inheritance;
 //Single level Inheritance
 public class SoftwareEngineer
@@ -35,7 +35,7 @@ public class SoftwareEngineer
 	}
 
 }
------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 package inheritance;
 //Single level Inheritance
 public class Developer extends SoftwareEngineer
@@ -73,7 +73,7 @@ public class Developer extends SoftwareEngineer
 	}
 
 }
-------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------
 package inheritance;
 //Single level Inheritance
 public class DeveloperDriver
@@ -83,4 +83,4 @@ public class DeveloperDriver
 		d1.displayDeveloper();
 	}
 }
-------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------
