@@ -1,4 +1,5 @@
 //Heirarchical Inheritance example
+//Real life example using Google,Gmail and Google-Drive using Hierarchical Inheritance 
 package inheritance;
 //Hierarchical Inheritance
 public class Google 
