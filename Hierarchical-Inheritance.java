@@ -10,10 +10,11 @@ public class Doctor
 	double bonus;
 	
 	public Doctor() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 	Doctor(int empId,double salary,String license,int exp,double bonus)
 	{
+		super();
 		this.empId=empId;
 		this.salary=salary;
 		this.license=license;
@@ -43,16 +44,12 @@ public class Cardiologist extends Doctor
 	String honour;
 	
 	public Cardiologist() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 	Cardiologist(int empId,double salary,String license,int exp,double bonus,
 			String name,String organ,double fees,int ops,String feedback,String honour)
 	{
-		this.empId=empId;
-		this.salary=salary;
-		this.license=license;
-		this.exp=exp;
-		this.bonus=bonus;
+		super(empId,salary,license,exp,bonus);
 		
 		this.name=name;
 		this.organ=organ;
@@ -86,16 +83,12 @@ public class Neurologist extends Doctor
 	String honour;
 	
 	public Neurologist() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 	Neurologist(int empId,double salary,String license,int exp,double bonus,String name,
 			String organ,double fees,int ops,String feedback,String honour)
 	{
-		this.empId=empId;
-		this.salary=salary;
-		this.license=license;
-		this.exp=exp;
-		this.bonus=bonus;
+		super(empId,salary,license,exp,bonus);
 		
 		this.name=name;
 		this.organ=organ;
@@ -129,16 +122,12 @@ public class Orthopedics extends Doctor
 	String honour;
 	
 	public Orthopedics() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 	Orthopedics(int empId,double salary,String license,int exp,double bonus,String name,String organ,
 			double fees,int ops,String feedback,String honour)
 	{
-		this.empId=empId;
-		this.salary=salary;
-		this.license=license;
-		this.exp=exp;
-		this.bonus=bonus;
+		super(empId,salary,license,exp,bonus);
 		
 		this.name=name;
 		this.organ=organ;
