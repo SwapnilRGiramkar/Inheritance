@@ -11,12 +11,14 @@ public class Meta
 	String pass;
 	
 	
-	public Meta() {
-		// TODO Auto-generated constructor stub
+	public Meta()
+	{
+		super();
 	}
 	
 	Meta(String ceo,String hq,double turnover,String email,String pass)
 	{
+		super();
 		this.ceo=ceo;
 		this.hq=hq;
 		this.turnover=turnover;
@@ -54,17 +56,14 @@ public class Facebook extends Meta
 	int save;
 	int bin;
 	
-	public Facebook() {
-		// TODO Auto-generated constructor stub
+	public Facebook() 
+	{
+		super();
 	}
 	
 	Facebook(String ceo,String hq,double turnover,String email,String pass)
 	{
-		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
+		super(ceo,hq,turnover,email,pass);
 	}
 	
 	public void addPost(String email,int post)
@@ -130,17 +129,15 @@ public class Insta extends Meta
 	int save;
 	int bin;
 	
-	public Insta() {
-		// TODO Auto-generated constructor stub
+	public Insta() 
+	{
+		super();
 	}
 	
 	Insta(String ceo,String hq,double turnover,String email,String pass)
 	{
-		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
+		super(ceo,hq,turnover,email,pass);
+		
 	}
 	
 	public void addPosts(String email)
