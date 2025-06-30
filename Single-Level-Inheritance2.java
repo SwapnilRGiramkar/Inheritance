@@ -11,11 +11,13 @@ public class SoftwareEngineer
 	int exp;
 	double salary;
 
-	public SoftwareEngineer() {
-		// TODO Auto-generated constructor stub
+	public SoftwareEngineer() 
+	{
+		super();
 	}
 	SoftwareEngineer(String name,int empId,String compony,String degree,int exp,double salary )
 	{
+		super();
 		this.name=name;
 		this.empId=empId;
 		this.compony=compony;
@@ -45,18 +47,14 @@ public class Developer extends SoftwareEngineer
 	String role;
 	String domain;
 
-	public Developer() {
-		// TODO Auto-generated constructor stub
+	public Developer() 
+	{
+		super();
 	}
 	Developer(String name,int empId,String compony,String degree,int exp,double salary,
 			String teckStack,int project,String role,String domain)
 	{
-		this.name=name;
-		this.empId=empId;
-		this.compony=compony;
-		this.degree=degree;
-		this.exp=exp;
-		this.salary=salary;
+		super(name,empId,compony,degree,exp,salary);
 
 		this.teckStack=teckStack;
 		this.project=project;
