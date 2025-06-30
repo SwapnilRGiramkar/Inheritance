@@ -11,16 +11,19 @@ public class Google
 	String email;
 	String pass;
 	
-	public Google() {
-		// TODO Auto-generated constructor stub
+	public Google() 
+	{
+		super();
 	}
 	Google(String ceo,String hq,double turnover,String email,String pass)
 	{
+		super();
 		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
+                this.hq=hq;
+                this.turnover=turnover;
+                this.email=email;
+                this.pass=pass;
+
 	}
 	public void login(String email,String pass)
 	{
@@ -51,16 +54,13 @@ public class Gmail extends Google
 	int mails;
 	int bin;
 	
-	public Gmail() {
-		// TODO Auto-generated constructor stub
+	public Gmail() 
+	{
+		super();
 	}
 	Gmail(String ceo,String hq,double turnover,String email,String pass)
 	{
-		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
+		super(ceo,hq,turnover,email,pass);
 	}
 	
 	public void sendMail(String email,String content)
@@ -103,17 +103,14 @@ public class GoogleDrive extends Google
 	int audio;
 	int bin;
 	
-	public GoogleDrive() {
-		// TODO Auto-generated constructor stub
+	public GoogleDrive() 
+	{
+		super();
 	}
 	
 	GoogleDrive(String ceo,String hq,double turnover,String email,String pass)
 	{
-		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
+		super(ceo,hq.turnover,email,pass);
 	}
 	
 	public void add(String filetype)
@@ -210,124 +207,7 @@ public class GoogleDrive extends Google
 	}
 
 }
-//-------------------------------------------------------------------------------
-package inheritance;
 
-public class GoogleDrive extends Google
-{
-	int photo;
-	int vedios;
-	int docs;
-	int audio;
-	int bin;
-	
-	public GoogleDrive() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	GoogleDrive(String ceo,String hq,double turnover,String email,String pass)
-	{
-		this.ceo=ceo;
-		this.hq=hq;
-		this.turnover=turnover;
-		this.email=email;
-		this.pass=pass;
-	}
-	
-	public void add(String filetype)
-	{
-		switch (filetype) 
-		{
-		case "photo": 
-		case "Photo":
-		{	
-			System.out.println("Photoe added");
-			photo++;
-		}
-		break;
-		case "vedios": 
-		case "Vedios":
-		case "vedio":
-		{	
-			System.out.println("Vedios added");
-			vedios++;
-		}
-		break;
-		case "docs": 
-		case "Docs":
-		{	
-			System.out.println("Docs added");
-			docs++;
-		}
-		break;
-		case "audio": 
-		case "Audio":
-		case "audios":
-		{	
-			System.out.println("Audio added");
-			audio++;
-		}
-		break;
-		default:
-			System.out.println("Invalid Filetype");
-		}
-	}
-
-	//---------------------for deletion------------------------------------------
-	public void delete(String filetype)
-	{
-		switch (filetype) 
-		{
-		case "photo": 
-		case "Photo":
-		{	
-			System.out.println("Photoe deleted");
-			photo--;
-			bin++;
-		}
-		break;
-		case "vedios": 
-		case "Vedios":
-		case "vedio":
-		{	
-			System.out.println("Vedios addeletedded");
-			vedios--;
-			bin++;
-		}
-		break;
-		case "docs": 
-		case "Docs":
-		{	
-			System.out.println("Docs deleted");
-			docs--;
-			bin++;
-		}
-		break;
-		case "audio": 
-		case "Audio":
-		case "audios":
-		{	
-			System.out.println("Audio deleted");
-			audio--;
-			bin++;
-		}
-		break;
-		default:
-			System.out.println("Invalid Filetype");
-		}
-	}
-	
-	public void displayDrive()
-	{
-		System.out.println("Photoes: "+photo);
-		System.out.println("Vedios : "+vedios);
-		System.out.println("Audios : "+audio);
-		System.out.println("Documents : "+docs);
-		System.out.println("Deleted : "+bin);
-		System.out.println("-------------------------------------------");
-	}
-
-}
 //-----------------------------------------------------------------------------------------
 package inheritance;
 
