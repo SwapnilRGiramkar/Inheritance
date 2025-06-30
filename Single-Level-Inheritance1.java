@@ -10,11 +10,13 @@ public class UPI
 	int accNo;
 	long mob;;
 
-	public UPI() {
-		// TODO Auto-generated constructor stub
+	public UPI() 
+	{
+		super();
 	}
 	UPI(String bankName,String userName,String actype,int accNo,long mob)
 	{
+		super();
 		this.bankName=bankName;
 		this.userName=userName;
 		this.actype=actype;
@@ -44,18 +46,15 @@ public class Phonepay extends UPI
 	String pass;
 	String email;
 
-	public Phonepay() {
-		// TODO Auto-generated constructor stub
+	public Phonepay() 
+	{
+		super();
 	}
 
 	Phonepay(String bankName,String userName,String actype,int accNo,long mob,String upiType,int earnReward,String upiId,int accs,String pass,String email)
 	{
-		this.bankName=bankName;
-		this.userName=userName;
-		this.actype=actype;
-		this.accNo=accNo;
-		this.mob=mob;
-
+		super(bankName,userName,actype,accNo,mob);
+		
 		this.upiType=upiType;
 		this.earnReward=earnReward;
 		this.upiId=upiId;
