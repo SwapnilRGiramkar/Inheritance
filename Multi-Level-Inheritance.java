@@ -9,11 +9,13 @@ public class University
 	String uLoc;
 	int code;
 	
-	public University() {
-		// TODO Auto-generated constructor stub
+	public University() 
+	{
+		super();
 	}
 	University(String uName,String uType,String vc,String uLoc,int code)
 	{
+		super();
 		this.uName=uName;
 		this.uType=uType;
 		this.vc=vc;
@@ -43,17 +45,14 @@ public class College extends University
 	int grade;
 	int noOfDepts;
 	
-	public College() {
-		// TODO Auto-generated constructor stub
+	public College() 
+	{
+		super();
 	}
 	College(String uName,String uType,String vc,String uLoc,int code,String collName,String principal,String address,
 			int collCode,int grade,int noOfDepts)
 	{
-		this.uName=uName;
-		this.uType=uType;
-		this.vc=vc;
-		this.uLoc=uLoc;
-		this.code=code;
+		super(uName,uType,vc,uLoc,code);
 		
 		this.collName=collName;
 		this.principal=principal;
@@ -87,24 +86,14 @@ public class Department extends College
 	int noOfStudents;
 	int seats;
 	
-	public Department() {
-		// TODO Auto-generated constructor stub
+	public Department() 
+	{
+		super();
 	}
 	Department(String uName,String uType,String vc,String uLoc,int code,String collName,String principal,String address,
 			int collCode,int grade,int noOfDepts,String type,String hod,int lec,int noOfStudents,int seats)
 	{
-		this.uName=uName;
-		this.uType=uType;
-		this.vc=vc;
-		this.uLoc=uLoc;
-		this.code=code;
-		
-		this.collName=collName;
-		this.principal=principal;
-		this.address=address;
-		this.collCode=collCode;
-		this.grade=grade;
-		this.noOfDepts=noOfDepts;
+		super(uName,uType,vc,uLoc,code,collName,principal,address,collCode,grade,noOfDepts);
 		
 		this.type=type;
 		this.hod=hod;
@@ -137,4 +126,3 @@ public class UniversityDriver
 	}
 
 }
-
